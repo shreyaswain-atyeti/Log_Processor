@@ -1,0 +1,28 @@
+{
+  "file_name": "LOG1.txt",
+  "date_of_creation": "20250528123456",
+  "log_levels": {
+    "info": {
+      "messages": [
+        "[AuthService] - User login successful for user: johndoe",
+        "[AuthService] - login successful",
+        "[AuthService] - logout successful"
+      ],
+      "count": 3
+    },
+    "error": {
+      "messages": [
+        "[DatabaseConnector] - Failed to connect to database: timeout after 5000ms",
+        "[DatabaseConnector] - Failed to connect to database: timeout after 5000ms",
+        "[DatabaseConnector] - Failed to connect to database: timeout after 5000ms"
+      ],
+      "count": 3
+    },
+    "warning": {
+      "messages": [
+        "[PaymentGateway] - Payment gateway response delayed for order #123457"
+      ],
+      "count": 1
+    }
+  }
+}
