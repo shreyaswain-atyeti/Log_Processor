@@ -1,0 +1,40 @@
+Problem statement--Log Analyzer and Report Generator
+Reads multiple large log files from a directory (file handling).
+Counts error, warning and info messages  frequency 
+Stores the data into a relational database using JDBC (JDBC).---usin orm python sql alchemy
+Handles all possible exceptions gracefully and logs any failures in a separate error log file (error handling).
+
+
+
+install requirements.txt--done
+setup db connection using orm model that is sql alchemy with mysql workbench---done
+read the logs directory file---3 files in it
+extract the info, error and warning occurances from the file
+store it in the table---table structure---
+    info---file name(eg.applog_1), no of occurances
+    error---file name(eg.applog_1), no of occurances
+    warnings---file name(eg.applog_1), no of occurances
+use lazy loading ----
+log the runtime errors in a logger file
+
+-------------------------------
+
+file validation process
+>>if file is of .txt format, 
+>>if file is of zip then unzip it and see all files are of .txt
+    a. 
+
+----------------------------------------------------------------------------
+
+1. If file is of .txt 
+2. If file is of .zip -> then unzipt it and see all files are of .txt 
+	a. if any of the file present in unzip folder is not in .txt then a proper message should be thrown // shown in consol "Invalid File file_name , We are expecting only .txt files to process."
+3. File header should contain file name and date like this -> "File_Name,Date" // in formta yyyymmdd
+4. File footer should contain total number of lines of information like this -> "499"
+ 
+ 
+input 
+file validation 
+file processing (calculating the freq for each file )
+db Update
+
